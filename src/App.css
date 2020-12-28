@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    margin: 30px auto;
+    width: 350px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: Lato-Bold;
+    src: url(./Lato-Bold.ttf);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    font-family: Lato-Bold, sens-serif;
+}
+
+div {
+    display: block;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+
+.inc-exp-container {
+    border: 1px solid rgb(236, 222, 222);
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.inc-exp-container>div:first-of-type {
+    border-right: 1px solid #dedede;
+}
+
+.inc-exp-container>div {
+    flex: 1 1;
+    text-align: center;
+}
+
+.money-plus {
+    color: forestgreen;
+}
+
+.money {
+    /* font-size: 10px; */
+    letter-spacing: 1px;
+    margin: 10px 0;
+    /* padding-top: 10px; */
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.money-minus {
+    color: rgb(109, 27, 27);
+}
+
+h3 {
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list li.plus {
+    border-right: 5px solid forestgreen;
+}
+
+.list li {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    box-shadow: var(--box-shadow);
+    color: rgb(22, 9, 9);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+li {
+    display: list-item;
+    border: 1px ridge #dedede;
+}
+
+.list li.minus {
+    border-right: 5px solid red;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: rgb(207, 49, 49);
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.delete-btn:hover {
+    opacity: 100%;
+}
+
+button {
+    appearance: button;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+}
+
+.clear-btn,
+.footer {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.clear-btn {
+    cursor: pointer;
+    background-color: rgb(145, 82, 145);
+    color: #fff;
+    display: block;
+    margin: 30px 250px 20px;
+    width: 30%;
 }
