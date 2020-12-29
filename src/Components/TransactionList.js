@@ -4,7 +4,6 @@ function TransactionList() {
     return (
         <div className="trans">
             <h3>History</h3>
-            <hr />
             <ul className="list">
                 <li className="plus">
                     Cash

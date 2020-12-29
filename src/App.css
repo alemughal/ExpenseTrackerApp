@@ -93,6 +93,7 @@ p {
 }
 
 h3 {
+    border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin: 40px 0 10px;
     display: block;
@@ -192,9 +193,56 @@ button {
 
 .clear-btn {
     cursor: pointer;
-    background-color: rgb(145, 82, 145);
+    background-color: #9c88ff ;
     color: #fff;
     display: block;
     margin: 30px 250px 20px;
     width: 30%;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    cursor: default;
+}
+
+.btn, input[type=number] {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type=number], input[type=text] {
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 2px;
+}
+
+input {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-align: start;
+    appearance: textfield;
+
+}
+
+.btn {
+    background-color: #9c88ff ;
+    color: #fff;
+    margin: 10px 0 30px;
+}
+
+.btn, input[type=number], input[type=text] {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
 }
