@@ -74,18 +74,14 @@ h4 {
 }
 
 .money {
-    /* font-size: 10px; */
     letter-spacing: 1px;
     margin: 10px 0;
-    /* padding-top: 10px; */
+    padding-top: 10px;
+    font-weight: bolder;
 }
 
 p {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .money-minus {

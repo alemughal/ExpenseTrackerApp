@@ -12,7 +12,7 @@ function AddTransaction() {
                 </div>
                 <div className="form-control">
                     <label> Amount <br /> (Negative- = Expense, Positive+ = Income)</label>
-                    <input type="number" placeholder="Enter Amount" required value />
+                    <input type="number" placeholder="Enter Amount" required  />
                 </div>
                 <button type="submit" className="btn">Add Transaction</button>
             </form>

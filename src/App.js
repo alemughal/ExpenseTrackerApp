@@ -10,13 +10,15 @@ import AddTransaction from './Components/AddTransaction';
 
 function App() {
     return (
-        <div className="container">
+        <div>
             <Header />
-            <Balance />
-            <IncomeExpense />
-            <TransactionList />
-            {/* <Transaction /> */}
-            <AddTransaction />
+            <div className="container">
+                <Balance />
+                <IncomeExpense />
+                <TransactionList />
+                {/* <Transaction /> */}
+                <AddTransaction />
+            </div>
         </div>
     )
 }
