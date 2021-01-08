@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { transContext } from '../Context/transContext';
+import { TransactionContext } from '../Context/transContext';
 
 function TransactionList() {
 
-    let transactions = useContext(transContext);
+    let transactions = useContext(TransactionContext);
     return (
         <div className="trans">
             <h3>History</h3>
