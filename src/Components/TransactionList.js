@@ -3,7 +3,8 @@ import { TransactionContext } from '../Context/transContext';
 
 function TransactionList() {
 
-    let transactions = useContext(TransactionContext);
+    let {transactions} = useContext(TransactionContext);
+    console.log(transactions)
     return (
         <div className="trans">
             <h3>History</h3>

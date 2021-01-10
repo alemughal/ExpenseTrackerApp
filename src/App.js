@@ -6,11 +6,12 @@ import IncomeExpense from './Components/IncomeExpense';
 import TransactionList from './Components/TransactionList';
 // import Transaction from './Components/Transaction';
 import AddTransaction from './Components/AddTransaction';
+import { TransactionProvider } from './Context/transContext';
 
 
 function App() {
     return (
-        <div>
+        <TransactionProvider>
             <Header />
             <div className="container">
                 <Balance />
@@ -19,7 +20,7 @@ function App() {
                 {/* <Transaction /> */}
                 <AddTransaction />
             </div>
-        </div>
+        </TransactionProvider>
     )
 }
 
