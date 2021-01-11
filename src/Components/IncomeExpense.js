@@ -25,11 +25,11 @@ function IncomeExpense() {
         <div className="inc-exp-container">
             <div className="money">
                 <h4>Income</h4>
-                <p className="money-plus">{getIncome()}</p>
+                <p className="money-plus">${getIncome()}</p>
             </div>
             <div className="money">
                 <h4>Expense</h4>
-                <p className="money-minus">{getExpense()}</p>
+                <p className="money-minus">${getExpense()}</p>
             </div>
         </div>
     )

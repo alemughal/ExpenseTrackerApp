@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { TransactionContext } from '../Context/transContext';
+import React, { useContext } from 'react'
+// import Transaction from './Transaction'
+import { TransactionContext } from '../Context/transContext'
 
 function TransactionList() {
 
-    let {transactions} = useContext(TransactionContext);
-    console.log(transactions)
+    let {transactions, delAllTransaction} = useContext(TransactionContext);
     return (
         <div className="trans">
             <h3>History</h3>
@@ -13,14 +13,14 @@ function TransactionList() {
                     return (
                         <li key={ind} className={(transObj.amount > 0) ? 'plus' : 'minus'}>
                             <span>{transObj.desc}</span>
-                            <span>{transObj.amount}</span>
+                            <span>${transObj.amount}</span>
                         </li>
                     )
                 })}
             </ul>
-            <button className='clear-btn'>Clear All</button>
+            <button onClick={() => delAllTransaction()} className='clear-btn'>Clear All</button>
         </div>
     )
 }
 
-export default TransactionList;
+export default TransactionList

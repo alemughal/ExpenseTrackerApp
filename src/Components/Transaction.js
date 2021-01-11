@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import {TransactionContext} from '../Context/transContext';
 
 
 
-function Transaction () {
+function Transaction ({ transaction }) {
+    const { delTransaction } = useContext(TransactionContext);
+    const sign = transaction.amount < 0 ? '-' : '+' ;
     return (
         <div>
-            {/* <h1>Hello World</h1> */}
-            <button className="delete-btn">Xxxxx</button>
-            <button className="delete-btn">X</button>
+            <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
+                {transaction.text}<span>{sign}${Math.abs(transaction.amount)}</span>
+                <button onClick={() => delTransaction(transaction.id)} className="delete-btn">X</button>
+            </li>
         </div>
     )
 }

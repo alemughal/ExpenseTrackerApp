@@ -154,8 +154,12 @@ li {
     left: 0;
     transform: translate(-100%, -50%);
     opacity: 0;
-    transition: .3s ease;
+    transition: opacity 0.3s ease;
 }
+
+.list li:hover .delete-btn {
+    opacity: 1;
+  }
 
 .delete-btn:hover {
     opacity: 100%;
