@@ -10,10 +10,10 @@ function AddTransaction() {
         event.preventDefault();
         addTransaction({
             desc: newDesc,
-            amount: newAmount
+            amount: Number(newAmount)
         })
         setDesc("")
-        setAmount(0)
+        setAmount("")
     }
     return (
         <div>
