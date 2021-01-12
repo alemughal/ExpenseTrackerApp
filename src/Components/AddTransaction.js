@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { TransactionContext } from '../Context/transContext';
 
 function AddTransaction() {
-    let {transaction,addTransaction} = useContext(TransactionContext)
+    let {addTransaction} = useContext(TransactionContext)
     let [newAmount, setAmount] = useState(0);
     let [newDesc, setDesc] = useState("");
 
@@ -11,7 +11,9 @@ function AddTransaction() {
         addTransaction({
             desc: newDesc,
             amount: Number(newAmount)
+        
         })
+        console.log(newDesc, newAmount)
         setDesc("")
         setAmount("")
     }
