@@ -20,7 +20,7 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
     - name: deploying using surge
-      run: surge ./ bootcampzozo.surge.sh --token ${{ secrets.SurgeToken }}
+      run: surge ./ expense-tracker-alii.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       #Runs a set of conmmand using runner shell
     - name: Build the site in the jekyll/builder container
       run: |
