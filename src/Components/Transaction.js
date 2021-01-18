@@ -3,7 +3,7 @@ import {TransactionContext} from '../Context/transContext';
 
 
 
-function Transaction ({ transaction }) {
+function Transaction ({ transaction, id }) {
     const { delTransaction } = useContext(TransactionContext);
     const sign = transaction.amount < 0 ? '-' : '+' ;
     return (

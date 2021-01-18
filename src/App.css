@@ -193,7 +193,7 @@ button {
 
 .clear-btn {
     cursor: pointer;
-    background-color: #9c88ff ;
+    background-color: #25665d ;
     color: #fff;
     display: block;
     margin: 30px 250px 20px;
@@ -235,7 +235,7 @@ input {
 }
 
 .btn {
-    background-color: #9c88ff ;
+    background-color: #25665d ;
     color: #fff;
     margin: 10px 0 30px;
 }

@@ -9,11 +9,11 @@ function AddTransaction() {
     const handleClick = (event) => {
         event.preventDefault();
         addTransaction({
+            id: Math.floor(Math.random() * 100000000),
             desc: newDesc,
             amount: Number(newAmount)
         
         })
-        console.log(newDesc, newAmount)
         setDesc("")
         setAmount("")
     }
@@ -22,12 +22,12 @@ function AddTransaction() {
             <h3>Add New Transaction</h3>
             <form onSubmit={handleClick}>
                 <div className="form-control">
-                    <label> Text </label>
-                    <input type="text" placeholder="Enter Description" value={newDesc} onChange={(ev) => setDesc(ev.target.value)} required/>
+                    <label htmlFor="newAmount"> Text </label>
+                    <input type="text" id="newAmount" placeholder="Enter Description" value={newDesc} onChange={(ev) => setDesc(ev.target.value)} required/>
                 </div>
                 <div className="form-control">
-                    <label> Amount <br /> (Negative- = Expense, Positive+ = Income)</label>
-                    <input type="number" placeholder="Enter Amount" value={newAmount} onChange={(ev) => setAmount(ev.target.value)} required/>
+                    <label htmlFor="newDesc"> Amount <br /> (Negative- = Expense, Positive+ = Income)</label>
+                    <input type="number" id="newDesc" placeholder="Enter Amount" value={newAmount} onChange={(ev) => setAmount(ev.target.value)} required/>
                 </div>
                 <button type="submit" className="btn">Add Transaction</button>
             </form>

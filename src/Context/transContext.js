@@ -2,11 +2,12 @@ import React, { createContext, useReducer } from 'react';
 import TransactionReducer from "./transReducer";
 
 const initialTransactions = [
-    {id:0, amount: 1000, desc: "Cash" },
-    {id:1, amount: -50, desc: "Cold Drink" },
-    {id:2, amount: 100, desc: "Deposit" },
-    {id:3, amount: -200, desc: "Books" },
+    { id: 1, desc: "Cash", amount: 1000 },
+    { id: 2, desc: "Cold Drink", amount: -50 },
+    { id: 3, desc: "Deposit", amount: 100 },
+    { id: 4, desc: "Books", amount: -200 },
 ]
+
 
 
 export const TransactionContext = createContext(initialTransactions);
@@ -19,14 +20,14 @@ export const TransactionProvider = ({ children }) => {
             payload: transaction
         })
     }
-    function delTransaction (id) {
+    function delTransaction(id) {
         dispatch({
-            type:"DEL TRANSACTION",
+            type: "DEL TRANSACTION",
             payload: id
         });
     }
     function delAllTransaction() {
-        dispatch ({
+        dispatch({
             type: "DEL ALL TRANSACTION"
         }
         )
