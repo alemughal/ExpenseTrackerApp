@@ -5,7 +5,6 @@ import { TransactionContext } from '../Context/transContext'
 function TransactionList() {
 
     const { transactions, delAllTransaction } = useContext(TransactionContext);
-    // console.log(transactions)
     return (
         <div className="trans">
             <h3>History</h3>
