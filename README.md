@@ -8,8 +8,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
-App Link :
-http://expense-tracker-alii.surge.sh/
+
+### `LIVE SITE` https://expense-tracker-alii.surge.sh/
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
